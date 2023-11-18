@@ -1,0 +1,152 @@
+db.usuario.insertMany([
+  { user: "joao.silva", password: "joao.silva@123" },
+  { user: "maria.rodrigues", password: "maria.rodrigues@123" },
+  { user: "carlos.oliveira", password: "carlos.oliveira@123" },
+  { user: "ana.santos", password: "ana.santos@123" },
+  { user: "felipe.gomes", password: "felipe.gomes@123" },
+  { user: "laura.machado", password: "laura.machado@123" },
+  { user: "roberto.silveira", password: "roberto.silveira@123" },
+  { user: "amanda.pereira", password: "amanda.pereira@123" },
+  { user: "gabriel.almeida", password: "gabriel.almeida@123" },
+  { user: "julia.fernandes", password: "julia.fernandes@123" }
+]);
+
+db.aluno.insertMany([
+  {
+    nome: "Lucas Oliveira",
+    idade: 9,
+    turma: "3A",
+    responsavel: {
+      cpf: "712341234-56",
+      nome: "Aline Oliveira",
+      telefone: "98765-4321",
+      email: "aline.oliveira@gmail.com",
+      endereco: "Rua das Flores, n°45"
+    },
+    notas: { nota1: 8.5, nota2: 7.9 }
+  },
+  {
+    nome: "Camila Santos",
+    idade: 7,
+    turma: "3B",
+    responsavel: {
+      cpf: "987654321-09",
+      nome: "Rafael Santos",
+      telefone: "99876-5432",
+      email: "rafael.santos@hotmail.com",
+      endereco: "Avenida Central, n°102"
+    },
+    notas: { nota1: 6.8, nota2: 8.2 }
+  },
+  {
+    nome: "Juliana Lima",
+    idade: 8,
+    turma: "3A",
+    responsavel: {
+      cpf: "543216789-01",
+      nome: "Carlos Lima",
+      telefone: "91234-5678",
+      email: "carlos.lima@gmail.com",
+      endereco: "Travessa dos Sonhos, n°15"
+    },
+    notas: { nota1: 7.3, nota2: 7.1 }
+  }
+]);
+
+
+
+db.aluno.insertMany([
+  {
+    nome: "Mariana Silva",
+    idade: 9,
+    turma: "3B",
+    responsavel: {
+      cpf: "789012345-67",
+      nome: "Roberto Silva",
+      telefone: "94567-1234",
+      email: "roberto.silva@gmail.com",
+      endereco: "Rua das Palmeiras, n°76"
+    },
+    notas: { nota1: 8.2, nota2: 7.5 }
+  },
+  {
+    nome: "Ricardo Santos",
+    idade: 6,
+    turma: "3A",
+    responsavel: {
+      cpf: "456789012-34",
+      nome: "Patricia Santos",
+      telefone: "87654-5678",
+      email: "patricia.santos@yahoo.com",
+      endereco: "Avenida do Bosque, n°32"
+    },
+    notas: { nota1: 7.6, nota2: 6.9 }
+  },
+  {
+    nome: "Gabriel Lima",
+    idade: 10,
+    turma: "3B",
+    responsavel: {
+      cpf: "123456789-01",
+      nome: "Fernanda Lima",
+      telefone: "93456-7890",
+      email: "fernanda.lima@hotmail.com",
+      endereco: "Rua das Estrelas, n°90"
+    },
+    notas: { nota1: 9.0, nota2: 8.3 }
+  },
+  {
+    nome: "Ana Oliveira",
+    idade: 7,
+    turma: "3A",
+    responsavel: {
+      cpf: "890123456-78",
+      nome: "Lucas Oliveira",
+      telefone: "98765-4321",
+      email: "lucas.oliveira@gmail.com",
+      endereco: "Travessa da Alegria, n°21"
+    },
+    notas: { nota1: 6.5, nota2: 7.8 }
+  },
+  {
+    nome: "Pedro Rocha",
+    idade: 8,
+    turma: "3B",
+    responsavel: {
+      cpf: "567890123-45",
+      nome: "Amanda Rocha",
+      telefone: "91234-5678",
+      email: "amanda.rocha@yahoo.com",
+      endereco: "Rua das Montanhas, n°55"
+    },
+    notas: { nota1: 7.9, nota2: 8.1 }
+  }
+]);
+
+
+db.aula.insertMany([
+  {
+    "horario": "Segunda-feira 16:00",
+    "materia": "inglês",
+    "professor": {
+      "nome": "Luan Cardoso",
+      "telefone": "21345-2314",
+      "email": "luanOcardoso@gmail.com",
+      "endereco": "rua pedro alberto, n°141"
+    },
+    "sala": "New york 2",
+    "turma": "3B"
+  },
+  {
+    "horario": "Quarta-feira 18:00",
+    "materia": "Espanhol",
+    "professor": {
+      "nome": "Rafael Rodriguez",
+      "telefone": "12412-5423",
+      "email": "elRafaRodriguez@hotmail.com",
+      "endereco": "rua dionisio prester n°694"
+    },
+    "sala": "new mexico 4",
+    "turma": "3A"
+  }
+]);
